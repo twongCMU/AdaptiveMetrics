@@ -1,0 +1,47 @@
+1,exact,Triple Bottom Line
+1,exact,Three Pillars Model
+1,exact,Three Pillar Model
+1,exact,Daly Triangle
+1,exact,Three Es
+1,exact,3 Es
+1,exact,EEE
+1,exact,Sikdar
+1,exact,Three Ps
+1,exact,3 Ps
+1,exact,PPP
+1,any,physical econom social
+1,any,environ econom social 
+1,any,indust soci ecolog
+1,any,built natur people
+1,any,building nature people
+1,any,environ equit econom
+1,any,people planet profit
+2,exact,PSR
+2,exact,Pressure State Response
+2,exact,DPSIR 
+2,exact,Driver Pressure State Impact Response
+2,exact,DPSEEA
+2,exact,Driver Pressure State Exposure Effects Action
+2,exact,MEME
+2,exact,Multiple Exposures Multiple Effects
+2,any,driver pattern process function
+3,exact,Triple Value
+3,exact,3V
+3,exact,ADAPT framework
+3,exact,ADAPT model
+3,exact,analyze develop assess prioritize act 
+4,exact,hazard mitigation
+4,exact,infrastructure resilienc
+4,exact,threat hazard identification
+4,exact,hazard identification
+4,exact,risk assessment
+4,exact,multi hazard mitigation planning
+4,exact,vulnerability framework
+4,any,organize assess mitigat monitor
+4,any,resistant absorptive restorative
+4,any,robust redund resource rapid
+4,any,technic organization social econom
+5,exact,risk framework
+5,any,hazard vulnerab adapt 
+5,any,hazard expos vulnerab
+5,any,hazard sever
