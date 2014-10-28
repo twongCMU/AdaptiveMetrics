@@ -1,0 +1,56 @@
+1,exact5,Alabama
+2,exact5,Alaska
+3,exact5,American Samoa
+4,exact5,Arizona
+5,exact5,Arkansas
+6,exact5,California
+7,exact5,Colorado
+9,exact5,Connecticut
+10,exact5,Delaware
+11,exact5,Florida
+12,exact5,Georgia
+13,exact5,Guam
+14,exact5,Hawaii
+15,exact5,Idaho
+16,exact5,Illinois
+17,exact5,Indiana
+18,exact5,Iowa
+19,exact5,Kansas
+20,exact5,Kentucky
+21,exact5,Louisiana
+22,exact5,Maine
+23,exact5,Maryland
+24,exact5,Massachusetts
+25,exact5,Michigan
+26,exact5,Minnesota
+27,exact5,Mississippi
+28,exact5,Missouri
+29,exact5,Montana
+30,exact5,Nebraska
+31,exact5,Nevada
+32,exact5,New Hampshire
+33,exact5,New Jersey
+34,exact5,New Mexico
+35,exact5,New York
+36,exact5,North Carolina
+37,exact5,North Dakota
+38,exact5,Northern Marianas Islands
+39,exact5,Ohio
+40,exact5,Oklahoma
+41,exact5,Oregon
+42,exact5,Pennsylvania
+43,exact5,Portland
+44,exact5,Puerto Rico
+45,exact5,Rhode Island
+46,exact5,South Carolina
+47,exact5,South Dakota
+48,exact5,Tennessee
+49,exact5,Texas
+50,exact5,Utah
+51,exact5,Vermont
+52,exact5,Virgin Islands
+53,exact5,Virginia
+54,exact5,Washington
+55,exact5,West Virginia
+56,exact5,Wisconsin
+57,exact5,Wyoming
