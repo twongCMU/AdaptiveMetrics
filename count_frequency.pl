@@ -10,7 +10,7 @@ my $DATABASE_NAME = "adaptivemetrics";
 my $dbh = DBI->connect("dbi:mysql:" . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD,  {zeroDateTimeBehavior => "convertToNull", RaiseError => 1, PrintError => 1, mysql_enable_utf8 => 1})
     or die "Connection Error: $DBI::errstr\n";
 
-my @raw_datas = `cat CodingSheet.txt`;
+my @raw_datas = `cat CodingSheet2.txt`;
 my $where_clause = "";
 my $display_string = "";
 my $current_group = 1;
@@ -18,13 +18,15 @@ my %papers_included = ();
 my $raw_data_global = "";
 foreach my $raw_data (@raw_datas) {
   chomp $raw_data;
-  $raw_data_global = $raw_data;
+
   (my $this_group, my $this_technique, my $phrase) = split(/,/,$raw_data);
   if ($this_group != $current_group) {
     &print_result($raw_data_global, \%papers_included);
     $current_group = $this_group;
     %papers_included = ();
   }
+
+  $raw_data_global = $raw_data;
 
   if ($this_technique =~ /exact(\d+)/) {
     my $count_at_least = $1;
