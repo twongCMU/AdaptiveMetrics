@@ -1,25 +1,35 @@
-All of the papers that we consider are in pdf format. The information within
-each document is stored either as regular computer readable text or as scanned images
-of text. For each page of each paper, we dump the raw text and also run
-optical character recognition (OCR). Taking the text directly is more accurate
-than OCR, so we favor it when possible. Only when OCR generates
-10 or more times as much text as the raw text dump do we favor the OCR results.
- Setting such a high threshold
-eliminates noise while easily identifying a scanned page stored as an image rather
-than as text. We store the resulting text in a mysql database.
+In order to simplify the searching of the documents, we first import
+them into a MySQL database. The text within each pdf document is
+stored either as regular computer readable text or as scanned images
+of text, or a combination of both. While it is straightforward to
+import computer readable text, it is more difficult to process images
+of text. Furthermore, it is not immediately obvious to a computer
+program how the data is stored.  For each page of each paper, we dump
+the raw text and also run optical character recognition (OCR). Taking
+the text directly is more accurate than OCR, so we favor it when
+possible. Only when OCR generates 10 or more times as much text as the
+raw text dump do we favor the OCR results.  Setting such a high
+threshold eliminates noise while easily identifying a scanned page
+stored as an image rather than as text.
 
-We consider metrics in two ways. In the first way, we search the papers for a specific
-phrase. This is the simplest technique but is rigid in that any unexpected 
-variation on the use of the phrase will not be counted. In the second way, we allow searching
-of papers by looking for any number of terms as long as they appear on the same
-page. These terms can appear in any order and allow more flexibility in matching
- a series of terms without imposing the order in which they are used. Requiring them to appear
-on the same page as opposed to anywhere in the document gives us better confidence that the
-terms are related.
+Once the text is in the database, we consider metrics in two ways. In
+the first way, we search the papers for a specific phrase. This is the
+simplest technique but is rigid in that any unexpected variation on
+the use of the phrase will not be counted. In the second way, we allow
+searching of papers by looking for any number of terms as long as they
+appear on the same page. These terms can appear in any order and allow
+more flexibility in matching a series of terms without imposing the
+order in which they are used. This method also allows us to find a
+match even in the event of unexpected noise like whitespace and 
+punctuation. Requiring them to appear on the same page as opposed to
+anywhere in the document gives us better confidence that the terms are
+related.
 
-The code allows for the papers to be searched in any combination of the above. For
-example, a paper can be counted if it contains the phrase "A B" or the phrase "C D E"
-or it contains all of the terms X, Y, and Z anywhere on the same page. We converge on a 
-small set of phrases and terms that allow us assign meaningful categories to the collection of papers.
+The code allows for the papers to be searched in any combination of
+the above. For example, a paper can be counted if it contains the
+phrase "A B" or the phrase "C D E" or it contains all of the terms X,
+Y, and Z anywhere on the same page. We converge on a small set of
+phrases and terms that allow us assign meaningful categories to the
+collection of papers.
 
 
